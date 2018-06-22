@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Images from '@/components/Images'
 import Files from '@/components/Files'
-
+import Login from '@/components/Login'
 Vue.use(Router)
 
 export default new Router({
@@ -19,5 +19,9 @@ export default new Router({
         path: '/files',
         name: 'Files',
         component: Files
+    }, , {
+        path: '/login',
+        name: 'Login',
+        component: Login
     }]
 })

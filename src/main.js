@@ -10,6 +10,7 @@ import 'vuetify/dist/vuetify.min.css'
 Vue.use(Vuetify)
 Vue.use(VueMaterial)
 Vue.config.productionTip = false
+
 new Vue({
     el: '#app',
     router,

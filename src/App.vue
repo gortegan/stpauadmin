@@ -2,34 +2,42 @@
   <div id="app">
     <router-view/>
       <v-card>
-    <v-bottom-nav :value="true" :active.sync="e2" absolute color="transparent">
-      <v-btn dark color="teal" value="recent" to="/images">
-        <span>Images</span>
-        <v-icon>collections</v-icon>
-      </v-btn>
-      <v-btn dark color="teal" value="favorites" to="/files">
-        <span>Files</span>
-        <v-icon>file_copy</v-icon>
-      </v-btn>
-    </v-bottom-nav>
-  </v-card>
+        <v-bottom-nav :value="true" :active.sync="e2" absolute color="transparent">
+          <v-btn dark color="black" value="imatges" to="/images">
+            <span>Imatges</span>
+            <v-icon>collections</v-icon>
+          </v-btn>
+          <v-btn dark color="black" value="arxius" to="/files">
+            <span>Arxius</span>
+            <v-icon>file_copy</v-icon>
+          </v-btn>
+        </v-bottom-nav>
+   </v-card>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data () {
+    return {
+      msg: 'Administració de Sant Pau del Camp',
+      e2: 5
+    }
+  }
 }
 </script>
 
 <style>
-
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #000000;
+  text-decoration: none;
+  padding-top: 8%;
 }
 .bottom-nav.bottom-nav--absolute.bottom-nav--active.transparent {
     position: fixed;
@@ -47,4 +55,9 @@ export default {
     border: 1px solid rgba(#000, .26);
     background: rgba(#000, .06);
   }
+  .btn.btn--router.theme--dark.black {
+    color: black;
+    text-decoration: none;
+    border: none;
+}
 </style>
