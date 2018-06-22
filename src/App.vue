@@ -1,7 +1,18 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png" id="logo">
     <router-view/>
+      <v-card>
+    <v-bottom-nav :value="true" :active.sync="e2" absolute color="transparent">
+      <v-btn dark color="teal" value="recent" to="/images">
+        <span>Images</span>
+        <v-icon>collections</v-icon>
+      </v-btn>
+      <v-btn dark color="teal" value="favorites" to="/files">
+        <span>Files</span>
+        <v-icon>file_copy</v-icon>
+      </v-btn>
+    </v-bottom-nav>
+  </v-card>
   </div>
 </template>
 
@@ -18,14 +29,22 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #000000;
 }
-#logo{
-  margin-top: 100px;
-  width: 150px;
-}
+.bottom-nav.bottom-nav--absolute.bottom-nav--active.transparent {
+    position: fixed;
+  }
 .bottom-nav .btn{
   width: 50%;
   max-width: 50%;
 }
+  .phone-viewport {
+    width: 322px;
+    height: 200px;
+    display: inline-flex;
+    align-items: flex-end;
+    overflow: hidden;
+    border: 1px solid rgba(#000, .26);
+    background: rgba(#000, .06);
+  }
 </style>
