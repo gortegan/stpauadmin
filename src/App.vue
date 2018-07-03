@@ -18,9 +18,15 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 body{
-  background: #f5f5f5;
+  background: #f6f6f6;
 }
-
+.md-card{
+  background: white;
+}
+a.md-button{
+  text-decoration: none;
+  color: black;
+}
 #app {
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

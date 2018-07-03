@@ -1,6 +1,6 @@
 <template>
-<div class="container" >
-  <div class="row" >
+<div class="" >
+  <div class="row container" >
     <div class="col-md-3"></div>
     <div class="col-md-6 formlogin">
       <form novalidate @submit.prevent="validateUser" >
@@ -8,35 +8,37 @@
               <md-card-header>
                 <div class="md-title">Parròquia Sant Pau del Camp</div>
               </md-card-header>
-
               <md-card-content>
                 <md-field>
                   <label>Usuari</label>
                   <md-input></md-input>
                 </md-field>
-
                 <md-field>
                   <label>Contrasenya</label>
                   <md-input></md-input>
                 </md-field>
               </md-card-content>
               <md-card-actions>
-                <md-button class="md-raised block">Accedeix</md-button>
+                <md-button class="md-raised block" to="/">Accedeix</md-button>
               </md-card-actions>
             </md-card>
       </form>
     </div>
   </div>
-  <app-navbar></app-navbar>
+  <app-footer></app-footer>
 </div>
 </template>
 
 <script>
+import Footer from './Footer'
 export default {
   name: 'Login',
   data () {
     return {
     }
+  },
+  components: {
+    'app-footer': Footer
   }
 }
 </script>

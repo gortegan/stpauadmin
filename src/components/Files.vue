@@ -16,16 +16,6 @@ export default {
   },
   components: {
     'app-navbar': Navbar
-  },
-  route: {
-    canActivate(transition) {
-        console.log(user)
-        if (user.authenticated) {
-            transition.redirect('/login')
-        } else {
-            transition.next()
-        }
-    }
   }
 }
 </script>
