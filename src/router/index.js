@@ -17,7 +17,7 @@ export default new Router({
         name: 'Images',
         component: Images,
         beforeEnter: (to, from, next) => {
-            next('/login');
+            next();
         }
     }, {
         path: '/files',

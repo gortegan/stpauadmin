@@ -49,17 +49,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style  scoped>
-a[data-v-fed36922]{
+a[data-v-8dc7cce2]{
   text-decoration: none;
 }
 .md-card{
   color: black;
+  margin-top: 10px;
   padding: 50px 0px 0px 0px;
-  transition: .5s;
   cursor: pointer;
-}
-.md-card:hover{
-  background: #f5f5f5;
 }
 .md-card-content{
   margin: 20px 0px 50px 0px;

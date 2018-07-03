@@ -1,6 +1,6 @@
 <template>
 <div class="" >
-  <div class="row container" >
+  <div class="row" >
     <div class="col-md-3"></div>
     <div class="col-md-6 formlogin">
       <form novalidate @submit.prevent="validateUser" >
@@ -24,6 +24,7 @@
             </md-card>
       </form>
     </div>
+    <div class="col-md-2"></div>
   </div>
   <app-footer></app-footer>
 </div>
@@ -46,7 +47,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style  scoped>
 .formlogin {
-  margin: 50px;
+  margin-top: 50px;
 }
 .md-card-content {
   padding: 0px 10%;
