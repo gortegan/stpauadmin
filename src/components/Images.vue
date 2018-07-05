@@ -6,31 +6,101 @@
       <h4 class="subheading">Administració d'imatges. Es permet afegir, esborrar i modificar imatges de la base de dades.</h4>
   </div>
     <div class="container">
-    <v-card>
-      <v-card-actions>
-          <md-dialog :md-active.sync="obreImatge" class="container">
-            <md-dialog-title>Puja una nova imatge</md-dialog-title>
-            <md-field>
-              <label>Nom</label>
-              <md-input></md-input>
-            </md-field>
-            <md-field>
-              <label>Descripció</label>
-              <md-textarea md-autogrow></md-textarea>
-            </md-field>
-            <md-field>
-              <label>Selecciona una imatge </label>
-              <md-file />
-            </md-field>
-              <v-btn color="indigo"  >Pujar arxiu <v-icon right dark>cloud_upload</v-icon></v-btn>
-          </md-dialog>
+      <div class="row">
+        <div class="col-md-4">
+          <md-card >
+          <md-card-media-cover md-solid>
+            <md-card-media>
+              <img src="https://images.unsplash.com/photo-1530733023972-03de6789855c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8bea76f5755a01938323d5eba0f25ba0&auto=format&fit=crop&w=1170&q=80.jpg" alt="Skyscraper">
+            </md-card-media>
 
-          <v-btn align="right" fab dark color="indigo" @click="obreImatge = true">
-              <v-icon dark>add</v-icon>
-          </v-btn>
-      </v-card-actions>
-    </v-card>
+            <md-card-area>
+              <md-card-header>
+                <span class="md-title">Título</span>
+                <span class="md-subhead">Descripción</span>
+              </md-card-header>
+
+              <md-card-actions>
+                <md-button class="md-icon-button">
+                  <md-icon>edit</md-icon>
+                </md-button>
+
+                <md-button class="md-icon-button">
+                  <md-icon>delete</md-icon>
+                </md-button>
+              </md-card-actions>
+            </md-card-area>
+          </md-card-media-cover>
+        </md-card>
+        </div>
+        <div class="col-md-4">
+          <md-card>
+          <md-card-media-cover md-solid>
+          <md-card-media>
+              <img src="https://images.unsplash.com/photo-1530733023972-03de6789855c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8bea76f5755a01938323d5eba0f25ba0&auto=format&fit=crop&w=1170&q=80.jpg" alt="Skyscraper">
+            </md-card-media>
+          <md-card-area>
+              <md-card-header>
+                <span class="md-title">Título</span>
+                <span class="md-subhead">Descripción</span>
+              </md-card-header>
+
+              <md-card-actions>
+                <md-button class="md-icon-button">
+                  <md-icon>edit</md-icon>
+                </md-button>
+
+                <md-button class="md-icon-button">
+                  <md-icon>delete</md-icon>
+                </md-button>
+              </md-card-actions>
+            </md-card-area>
+          </md-card-media-cover>
+        </md-card>
+        </div>
+        <div class="col-md-4">
+          <md-card>
+          <md-card-media-cover md-solid>
+          <md-card-media>
+              <img src="https://images.unsplash.com/photo-1530733023972-03de6789855c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8bea76f5755a01938323d5eba0f25ba0&auto=format&fit=crop&w=1170&q=80.jpg" alt="Skyscraper">
+            </md-card-media>
+          <md-card-area>
+              <md-card-header>
+                <span class="md-title">Título</span>
+                <span class="md-subhead">Descripción</span>
+              </md-card-header>
+
+              <md-card-actions>
+                <md-button class="md-icon-button">
+                  <md-icon>edit</md-icon>
+                </md-button>
+
+                <md-button class="md-icon-button">
+                  <md-icon>delete</md-icon>
+                </md-button>
+              </md-card-actions>
+            </md-card-area>
+          </md-card-media-cover>
+        </md-card>
+        </div>
+      </div>        
     </div>
+    <md-dialog :md-active.sync="obreImatge" class="container">
+      <md-dialog-title>Puja una nova imatge</md-dialog-title>
+      <md-field>
+        <label>Nom</label>
+        <md-input></md-input>
+      </md-field>
+      <md-field>
+        <label>Descripció</label>
+        <md-textarea md-autogrow></md-textarea>
+      </md-field>
+      <md-field>
+        <label>Selecciona una imatge </label>
+        <md-file />
+      </md-field>
+        <v-btn color="indigo"  >Pujar arxiu <v-icon right dark>cloud_upload</v-icon></v-btn>
+    </md-dialog>
     <app-navbar></app-navbar>
   </div>
 </div>
@@ -65,6 +135,9 @@ export default {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.md-card{
+  padding: 0;
 }
 .md-dialog{
   background: white;
