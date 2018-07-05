@@ -97,12 +97,7 @@ button.btn.btn--flat.btn--large.indigo--text{
 button.btn.btn--icon {
     padding: 0px;
 }
-.md-card{
-  color: black;
+.card{
   margin-top: 10px;
-  padding: 50px 0px 0px 0px;
-}
-.md-card-content{
-  margin: 20px 0px 50px 0px;
 }
 </style>
