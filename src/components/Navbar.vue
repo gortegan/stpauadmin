@@ -35,6 +35,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style  scoped>
 .v-bottom-nav, .nav-card {
+    width: 100%;
+    bottom: 0px;
     position: fixed;
     background: white;
     text-align: center;
@@ -45,7 +47,7 @@ export default {
 .navbar-card{
   width: 100%;
 }
-a.nav-button.v-btn.v-btn--flat.v-btn--router.teal--text {
+a.nav-button.btn.btn--flat.btn--router.white--text {
     text-decoration: none;
     cursor: pointer;
 }

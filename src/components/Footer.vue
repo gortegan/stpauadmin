@@ -23,9 +23,8 @@ p {
 .footer{
   text-align: center;
   width: 100%;
-  border-top: 0.5px solid rgb(61, 61, 61);
   position: fixed;
-  bottom: 0;
-  height: 70px;
+  bottom: 0px;
+  height: 40px;
 }
 </style>

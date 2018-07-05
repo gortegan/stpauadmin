@@ -26,20 +26,16 @@
     </div>
     <div class="col-md-2"></div>
   </div>
-  <app-footer></app-footer>
 </div>
 </template>
 
 <script>
-import Footer from './Footer'
+
 export default {
   name: 'Login',
   data () {
     return {
     }
-  },
-  components: {
-    'app-footer': Footer
   }
 }
 </script>

@@ -1,11 +1,9 @@
 <template>
 <div>
-  <div class="container">
+  <div>
+    <div class="container">
     <h1>Imatges</h1>
     <v-card>
-      <div class="container">
-
-      </div>
       <v-card-actions>
           <md-dialog :md-active.sync="obreImatge" class="container">
             <md-dialog-title>Puja una nova imatge</md-dialog-title>
@@ -29,6 +27,7 @@
           </v-btn>
       </v-card-actions>
     </v-card>
+    </div>
     <app-navbar></app-navbar>
   </div>
 </div>
@@ -56,7 +55,11 @@ export default {
   background: white;
   width: 80%;
 }
-i.v-icon.theme--dark.material-icons, .v-btn{
+button.btn.indigo {
+    color: white;
+    padding: 0px;
+}
+i.icon.theme--dark.material-icons, .v-btn{
   color: white;
 }
 .md-dialog{
