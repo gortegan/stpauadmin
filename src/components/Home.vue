@@ -1,7 +1,10 @@
 <template>
-<div class="container">
-  <h1>Administració de Sant Pau del Camp</h1>
-  <div class="row">
+<div >
+  <div class="portada">
+      <h1 class="display-2 font-weight-thin text-center">Administració de Sant Pau del Camp</h1>
+      <h4 class="subheading">Aplicació d'administració de la web de la parròquia de Sant Pau del Camp</h4>
+  </div>
+  <div class="row container">
     <div class="col-md-6">
       <v-card>
         <v-card-media
@@ -32,7 +35,7 @@
       </v-card>
     </div>
     <div class="col-md-6">
-<v-card>
+    <v-card>
         <v-card-media
           src="https://images.unsplash.com/photo-1523698120758-030a38a90d16?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=854c2be9b645257ed1284cdc2c4856fe&auto=format&fit=crop&w=1351&q=80"
           height="300px"
@@ -82,6 +85,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style  scoped>
+.portada{
+  /* The image used */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)) center center / cover no-repeat fixed, url(https://images.unsplash.com/photo-1435527173128-983b87201f4d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7b7b9342fa8ab557ae827716c00ebb79&auto=format&fit=crop&w=1347&q=80);
+    text-align: center;
+    /* Set a specific height */
+    padding: 100px 0px;
+    color: white;
+    /* Create the parallax scrolling effect */
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 a{
   text-decoration: none;
 }

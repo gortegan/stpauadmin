@@ -39,7 +39,6 @@ a.md-button{
   text-align: center;
   color: #000000;
   text-decoration: none;
-  padding-top: 8%;
 }
   .phone-viewport {
     width: 322px;
