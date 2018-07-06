@@ -103,6 +103,9 @@
     </md-dialog>
     <app-navbar></app-navbar>
   </div>
+  <md-button class="md-fab md-primary indigo add-button">
+        <md-icon>add</md-icon>
+  </md-button>
 </div>
 </template>
 
@@ -124,6 +127,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style  scoped>
+.add-button{
+  position: fixed;
+  bottom: 65px;
+  right: 30px;
+}
+.indigo{
+  color: white;
+}
 .portada{
   /* The image used */
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)) center center / cover no-repeat fixed, url(https://images.unsplash.com/photo-1500051638674-ff996a0ec29e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3969f232784b2b43d8bdbef93b603ffe&auto=format&fit=crop&w=1392&q=80);

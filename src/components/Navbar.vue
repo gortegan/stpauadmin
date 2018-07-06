@@ -38,6 +38,7 @@ export default {
     width: 100%;
     bottom: 0px;
     position: fixed;
+    z-index: 1;
     background: white;
     text-align: center;
   }
