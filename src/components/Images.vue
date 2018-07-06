@@ -149,6 +149,7 @@ export default {
 }
 .md-card{
   padding: 0;
+  margin: 10px 0px 0px 0px;
 }
 .md-dialog{
   background: white;
